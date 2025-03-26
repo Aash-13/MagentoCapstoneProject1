@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">com.Magento.TestRunner.MagentoRegistrationTestNGTestRunner<br>com.Magento.TestRunner.MagentoSigninTestRunner<br>com.Magento.TestRunner.MagentoLogoutTestRunner<br>com.Magento.TestRunner.MagentoAddToCartTestRunner<br>com.Magento.TestRunner.MagentoAddMultipleProductsTestRunner<br>com.Magento.TestRunner.MagentoCheckoutTestRunner<br></th>
+	    <th id="testClassNameId" hidden="true">MagentoRegistrationTestNGTestRunner<br>MagentoSigninTestRunner<br>MagentoLogoutTestRunner<br>MagentoAddToCartTestRunner<br>MagentoAddMultipleProductsTestRunner<br>MagentoCheckoutTestRunner<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\Admin\eclipse-workspace\Magento-CapstoneProject\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:04:18</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>6</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																																
+											<tr>
+	<td class="time">1742804118330</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('f71d675d-b1ef-4738-9df9-b218f3d3339e','block');changeSingleIcon('span-f71d675d-b1ef-4738-9df9-b218f3d3339e');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoRegistrationTestNGTestRunner</div>
+	<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-f71d675d-b1ef-4738-9df9-b218f3d3339e' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1742804118330</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>41.646s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"To Check User Registration with Valid and Invalid Data Handling", "Unknown"</span><br>
+				<div class="noCollapse" id="f71d675d-b1ef-4738-9df9-b218f3d3339e" style="display: block;">
+						<a href="javascript:toggleElement('exception-f71d675d-b1ef-4738-9df9-b218f3d3339e','block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[1]/div[2]/div/div/div&quot;}<br/>
+&nbsp; (Session info: chrome=134.0.6998.118)<br/>
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br/>
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [bbc03803976842cd6ea395d6ce23cc6a, findElement {value=//div[1]/div[2]/div/div/div, using=xpath}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50276/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: bbc03803976842cd6ea395d6ce23cc6a</b></a><br/>
+		<div class="stackTrace" id="exception-f71d675d-b1ef-4738-9df9-b218f3d3339e">
+					java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)<br/>
+					java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)<br/>
+					java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)<br/>
+					org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)<br/>
+					org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)<br/>
+					org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br/>
+					org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)<br/>
+					org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)<br/>
+					org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br/>
+					org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)<br/>
+					org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)<br/>
+					org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br/>
+					jdk.proxy2/jdk.proxy2.$Proxy24.getText(Unknown Source)<br/>
+					com.Magento.Pages.MyAccountPage.successfullyRegistered(MyAccountPage.java:28)<br/>
+					com.Magento.StepDefinition.UserRegistrationStepDefinition.user_verify_successfully_registered_or_not(UserRegistrationStepDefinition.java:80)<br/>
+					✽.User Verify Successfully registered or not(file:///C:/Users/Admin/eclipse-workspace/Magento-CapstoneProject/src/test/resources/com.Magento.Feature/Registration.feature:17)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1742804286891</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('292364d8-cd0a-4335-96e4-69036a7c9190','block');changeSingleIcon('span-292364d8-cd0a-4335-96e4-69036a7c9190');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoAddMultipleProductsTestRunner</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-292364d8-cd0a-4335-96e4-69036a7c9190' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742804286891</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>60.778s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Adding Multiple Products to Cart & Validating Cart Summary", "Unknown"</span><br>
+				<div class="stackTrace" id="292364d8-cd0a-4335-96e4-69036a7c9190" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742804195765</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('73eaf40b-7d43-4414-8419-01aed2396965','block');changeSingleIcon('span-73eaf40b-7d43-4414-8419-01aed2396965');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoAddToCartTestRunner</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-73eaf40b-7d43-4414-8419-01aed2396965' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742804195765</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>91.049s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Login, Product Search and Add to Cart", "Unknown"</span><br>
+				<div class="stackTrace" id="73eaf40b-7d43-4414-8419-01aed2396965" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742804347832</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('35524075-9e01-48ed-bd28-f17d97091fed','block');changeSingleIcon('span-35524075-9e01-48ed-bd28-f17d97091fed');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoCheckoutTestRunner</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-35524075-9e01-48ed-bd28-f17d97091fed' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742804347832</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>28.541s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Checkout Process with Valid and Invalid Data Handling", "Unknown"</span><br>
+				<div class="stackTrace" id="35524075-9e01-48ed-bd28-f17d97091fed" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742804178744</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('21298eb5-550d-497a-b3f2-75ab64a13903','block');changeSingleIcon('span-21298eb5-550d-497a-b3f2-75ab64a13903');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoLogoutTestRunner</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-21298eb5-550d-497a-b3f2-75ab64a13903' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742804178744</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>16.977s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Logging Out and Verifying Session End", "Unknown"</span><br>
+				<div class="stackTrace" id="21298eb5-550d-497a-b3f2-75ab64a13903" style="display: block;">
+					</td>
+	</div>
+</tr>
+										<tr>
+			<td class="time">1742804160100</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ddc08a35-ddd7-4722-abcb-4e61409e7eec','block');changeSingleIcon('span-ddc08a35-ddd7-4722-abcb-4e61409e7eec');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>com.Magento.TestRunner.MagentoSigninTestRunner</div>
+			<div style="float:right;">@Test @ with DataProvider : ["scenarios"] &nbsp;&nbsp;<span id='span-ddc08a35-ddd7-4722-abcb-4e61409e7eec' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1742804160100</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>runScenario</span><br>
+			<span class="description"><b>Description: </b>Runs Cucumber Scenarios</span><br>
+						<span class="description"><b>Groups: </b><font color='green'>cucumber</font></span><br>
+				<span class="duration"><b>Duration: </b>18.616s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Login with Valid & Invalid Credentials", "Unknown"</span><br>
+				<div class="stackTrace" id="ddc08a35-ddd7-4722-abcb-4e61409e7eec" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
