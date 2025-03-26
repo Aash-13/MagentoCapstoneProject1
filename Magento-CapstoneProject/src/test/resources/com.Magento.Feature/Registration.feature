@@ -18,4 +18,4 @@ Then User Verify Successfully registered or not
 And User Closes the browser
 Examples:
 |FirstName|LastName|InvalidEmail|Password|ConfirmPassword|ValidEmail|
-|Aashritha|Kappala|sreenivasaashritha402|Sweety2003|Sweety2003|sreenivasaashritha453@gmail.com|
+|Aashritha|Kappala|sreenivasaashritha402|Sweety2003|Sweety2003|sreenivasaashritha454@gmail.com|
